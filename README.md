@@ -3,7 +3,7 @@
 ## 如何使用脚本
 * vps系统支持 debian10 以及 linus
 * 登录vps
-* https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && ./installReality.sh
+* curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && ./installReality.sh
 
 ## 客户端
   能力有限目前暂时支持输出clash.meta客户端配置给到meta客户端使用，可使用客户端列表（待测试补充）：
