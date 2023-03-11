@@ -5,7 +5,21 @@
 * 登录vps
 * 输入以下指令即可
   * ```curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && ./installReality.sh```
-
+## 调试
+```yaml
+#启动
+systemctl start sing-box
+#停止
+systemctl stop sing-box
+#强制停止
+systemctl kill sing-box
+#重启
+systemctl restart sing-box
+#查看日志
+journalctl -u sing-box --output cat -e
+#实时日志
+journalctl -u sing-box --output cat -f
+```
 ## 客户端
   能力有限目前暂时支持输出clash.meta客户端配置给到meta客户端使用，可使用客户端列表（待测试补充）：
   * macOS:
