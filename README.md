@@ -1,7 +1,7 @@
 # Reality 小白一键安装脚本（目前仅提供meta客户端使用的配置文件）
 
 ## 如何使用脚本
-* 系统支持 Debian 以及 Linus
+* 系统支持 Debian 以及 Ubuntu
 * 登录vps
 * 输入以下指令即可
   * ```curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && ./installReality.sh```
