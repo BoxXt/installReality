@@ -9,7 +9,7 @@
   [ClashX.Meta](https://github.com/MetaCubeX/ClashX.Meta/releases/tag/v1.2.1)
     * 需要更新内核版本为alpha最新版本。
     
-  * windows:
+  * Windows:
   [Clash Verage](https://github.com/zzzgydi/clash-verge/releases/tag/v1.2.3)
     * 需要更新内核版本为alpha最新版本。
     
