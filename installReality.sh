@@ -30,21 +30,20 @@ curl -o meta.yaml https://raw.githubusercontent.com/BoxXt/installReality/main/me
 
 
 echo "启动singbox用于安装reality"
-echo "生成密钥对,生成之后请保存好你的密钥对"
+echo -e "\033[32m 生成密钥对,生成之后请保存好你的密钥对 \033[0m"
 result=`sing-box generate reality-keypair`
-echo $result
+echo -e "\033[31m $result \033[0m" 
 echo -n "是否已经保存好你的密钥对?[y/n]"
 read name
-echo -n "请输入你刚刚保存的密钥对的私钥（PrivateKey）:"
+echo -n "\033[32m 请输入你刚刚保存的密钥对中的私钥（PrivateKey）: \033[0m"
 read pkey
-echo -n "请输入你刚刚保存的密钥对的公钥（Pubilckey）:"
+echo -n "\033[32m 请输入你刚刚保存的密钥对中的公钥（Pubilckey）: \033[0m"
 read pukey
 sed "s/pkey/$pkey/g" /usr/local/etc/sing-box/config.json
 
 echo "生成uuid"
 uuid=`sing-box generate uuid`
 echo $uuid
-echo -n "是否已经保存好你的uuid?[y/n]"
 sed "s/puuid/$uuid/g" /usr/local/etc/sing-box/config.json
 
 echo "安装openssl"
@@ -59,11 +58,11 @@ echo "完成配置，启动singbox"
 systemctl start sing-box
 
 echo "以下是支持reality的meta客户端所需要的配置信息："
-echo "servername: www.microsoft.com"
-echo "flow: xtls-rprx-vision"
-echo "uuid: $uuid"
-echo "key: $result"
-echo "short_id: $shortid"
+echo "\033[32m servername: www.microsoft.com \033[0m"
+echo "\033[32m flow: xtls-rprx-vision \033[0m"
+echo "\033[32m uuid: $uuid \033[0m"
+echo "\033[32m $result \033[0m"
+echo "\033[32m short_id: $shortid \033[0m"
 
 sed "s/pukey/$pukey/g" /usr/local/etc/sing-box/meta.yaml
 sed "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
