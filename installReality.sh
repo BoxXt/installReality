@@ -14,7 +14,6 @@ cd sing-box
 git switch dev-next
 echo "检查及自动安装go环境"
 if ! [ -x "$(command -v go)" ]; then
-set -e -o pipefail
 curl -Lo go.tar.gz https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf go.tar.gz
