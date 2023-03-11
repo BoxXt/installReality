@@ -5,7 +5,7 @@
 * 登录vps
 * https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && ./installReality.sh
 
-## 注意事项
+## 客户端
   能力有限目前暂时支持输出clash.meta客户端配置给到meta客户端使用，可使用客户端列表（待测试补充）：
   * macOS:
   [ClashX.Meta](https://github.com/MetaCubeX/ClashX.Meta/releases/tag/v1.2.1)
