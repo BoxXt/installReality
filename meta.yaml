@@ -19,7 +19,7 @@ dns:
 proxies:
 - name: reality
   type: vless
-  server: vpsip
+  server: //此处修改为自己的 vps ip地址
   port: 443
   uuid: puuid
   network: tcp
