@@ -39,19 +39,19 @@ echo -n "\033[32m 请输入你刚刚保存的密钥对中的私钥（PrivateKey�
 read pkey
 echo -n "\033[32m 请输入你刚刚保存的密钥对中的公钥（Pubilckey）: \033[0m"
 read pukey
-sed "s/pkey/$pkey/g" /usr/local/etc/sing-box/config.json
+sed -in "s/pkey/$pkey/g" /usr/local/etc/sing-box/config.json
 
 echo "生成uuid"
 uuid=`sing-box generate uuid`
 echo $uuid
-sed "s/puuid/$uuid/g" /usr/local/etc/sing-box/config.json
+sed -in "s/puuid/$uuid/g" /usr/local/etc/sing-box/config.json
 
 echo "安装openssl"
 sudo apt-get update && sudo apt-get install openssl
 shortid=`openssl rand -hex 4`
 echo "随机生成short_id"
 echo $shortid
-sed "s/pshortid/$shortid/g" /usr/local/etc/sing-box/config.json
+sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/config.json
 
 echo "完成配置，启动singbox"
 
@@ -64,9 +64,9 @@ echo "\033[31m uuid: $uuid \033[0m"
 echo "\033[31m $result \033[0m"
 echo "\033[31m short_id: $shortid \033[0m"
 
-sed "s/pukey/$pukey/g" /usr/local/etc/sing-box/meta.yaml
-sed "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
-sed "s/puuid/$uuid/g" /usr/local/etc/sing-box/meta.yaml
+sed -in "s/pukey/$pukey/g" /usr/local/etc/sing-box/meta.yaml
+sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
+sed -in "s/puuid/$uuid/g" /usr/local/etc/sing-box/meta.yaml
 echo "\033[32m 以下是你的meta客户端所需要的可用示例配置文件： \033[0m"
 cat /usr/local/etc/sing-box/meta.yaml
 echo "完成搭建"
