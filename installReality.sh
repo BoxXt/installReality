@@ -28,7 +28,6 @@ fi
 DIR=$(dirname "$0")
 PROJECT=$DIR/../..
 
-pushd $PROJECT
 go install -v -trimpath -ldflags "-s -w -buildid=" -tags with_quic,with_wireguard,with_acme,with_reality_server ./cmd/sing-box
 
 
