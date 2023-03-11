@@ -1,4 +1,4 @@
-echo "欢迎使用BoxXt提供的小白一键搭建 Xray Reality 脚本"
+echo -e "\033[32m 欢迎使用BoxXt提供的小白一键搭建 Xray Reality 脚本 \033[0m"
 echo "检查是否包含git环境"
 
 if ! [ -x "$(command -v git)" ]; then
