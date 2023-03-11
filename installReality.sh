@@ -71,6 +71,9 @@ sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/config.json
 echo "完成配置，启动singbox"
 echo ""
 systemctl start sing-box
+echo "设置开机自动启动"
+systemctl enable sing-box
+echo ""
 
 echo "以下是支持reality的meta客户端所需要的配置信息："
 echo ""
