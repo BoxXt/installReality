@@ -1,6 +1,5 @@
 echo -e "\033[32m 欢迎使用BoxXt提供的小白一键搭建 Xray Reality 脚本 \033[0m"
 echo "检查是否包含git环境"
-
 if ! [ -x "$(command -v git)" ]; then
   echo '没有git环境, 正在安装git...' >&2
   sudo apt update
@@ -54,16 +53,18 @@ echo $shortid
 sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/config.json
 
 echo "完成配置，启动singbox"
-
+echo ""
 systemctl start sing-box
 
 echo "以下是支持reality的meta客户端所需要的配置信息："
+echo ""
 echo "\033[31m servername: www.microsoft.com \033[0m"
 echo "\033[31m flow: xtls-rprx-vision \033[0m"
 echo "\033[31m uuid: $uuid \033[0m"
-echo "\033[31m $result \033[0m"
+echo "\033[31m PrivateKey: $pkey \033[0m"
+echo "\033[31m PublicKey: $pukey \033[0m"
 echo "\033[31m short_id: $shortid \033[0m"
-
+echo ""
 sed -in "s/pukey/$pukey/g" /usr/local/etc/sing-box/meta.yaml
 sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
 sed -in "s/puuid/$uuid/g" /usr/local/etc/sing-box/meta.yaml
