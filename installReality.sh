@@ -14,13 +14,11 @@ cd sing-box
 git switch dev-next
 echo "检查及自动安装go环境"
 if ! [ -x "$(command -v go)" ]; then
-  echo 'Installing Golang...' >&2
-  curl -O https://go.dev/dl/go1.20.2.linux-amd64.tar.gz
-  sudo tar -xvf go1.20.2.linux-amd64.tar.gz
-  sudo mv go /usr/local
-  rm go1.20.2.linux-amd64.tar.gz
-  echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
-  source ~/.bashrc
+set -e -o pipefail
+curl -Lo go.tar.gz https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf go.tar.gz
+rm go.tar.gz
 fi
 echo 'go环境已经安装完成'
 
