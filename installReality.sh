@@ -30,7 +30,7 @@ PROJECT=$DIR/../..
 
 pushd $PROJECT
 go install -v -trimpath -ldflags "-s -w -buildid=" -tags with_quic,with_wireguard,with_acme,with_reality_server ./cmd/sing-box
-popd
+
 
 sudo cp $(go env GOPATH)/bin/sing-box /usr/local/bin/
 sudo mkdir -p /var/lib/sing-box
