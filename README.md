@@ -31,8 +31,9 @@ journalctl -u sing-box --output cat -f
     * 需要更新内核版本为alpha最新版本。
     
   * iOS:
-  [Pharos Pro]()
-    * 需要在软件内发邮件申请到TF版本，策略配置中导入meta配置使用。
+    * [Singbox]() 
+    * [Pharos Pro]()
+      * 需要在软件内发邮件申请到TF版本，策略配置中导入meta配置使用。
   
   * Android:
     [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/Prerelease-alpha)
