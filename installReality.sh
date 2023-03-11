@@ -31,6 +31,10 @@ go install -v -trimpath -ldflags "-s -w -buildid=" -tags with_quic,with_wireguar
 sudo cp $(go env GOPATH)/bin/sing-box /usr/local/bin/
 sudo mkdir -p /var/lib/sing-box
 sudo mkdir -p /usr/local/etc/sing-box
+
+pwd=`pwd`
+echo "\033[31m $pwd \033[0m" 
+
 sudo cp /release/local/sing-box.service /etc/systemd/system
 sudo systemctl daemon-reload
 
