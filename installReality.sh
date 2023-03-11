@@ -65,8 +65,6 @@ echo "uuid: $uuid"
 echo "key: $result"
 echo "short_id: $shortid"
 
-
-sed 's/\vpsip\b/$vpsip/g' /usr/local/etc/sing-box/meta.yaml
 sed 's/\bpukey\b/$pukey/g' /usr/local/etc/sing-box/meta.yaml
 sed 's/\pshortid\b/$shortid/g' /usr/local/etc/sing-box/meta.yaml
 sed 's/\puuid\b/$uuid/g' /usr/local/etc/sing-box/meta.yaml
