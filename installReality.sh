@@ -27,7 +27,10 @@ echo 'go环境已经安装完成'
 echo "安装singbox"
 ./release/local/install.sh
 
-echo "启动singbox安装reality"
+echo "拉取初始singbox配置文件"
+curl -o config.json https://raw.githubusercontent.com/BoxXt/installReality/main/config.json && mv config.json /usr/local/etc/sing-box/config.json
+
+echo "启动singbox用于安装reality"
 echo "生成密钥对,生成之后请保存好你的密钥对"
 result=`sing-box generate reality-keypair`
 echo $result
