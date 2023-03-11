@@ -65,8 +65,7 @@ echo "uuid: $uuid"
 echo "key: $result"
 echo "short_id: $shortid"
 
-echo -n "输入此vps的ip用于提供meta客户端所需要的配置文件示例："
-read vpsip
+
 sed 's/\vpsip\b/$vpsip/g' /usr/local/etc/sing-box/meta.yaml
 sed 's/\bpukey\b/$pukey/g' /usr/local/etc/sing-box/meta.yaml
 sed 's/\pshortid\b/$shortid/g' /usr/local/etc/sing-box/meta.yaml
