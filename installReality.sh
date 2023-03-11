@@ -15,7 +15,7 @@ git switch dev-next
 echo "检查及自动安装go环境"
 if ! [ -x "$(command -v go)" ]; then
   echo 'Installing Golang...' >&2
-  curl -O https://golang.org/dl/go1.20.2.linux-amd64.tar.gz
+  curl -O https://go.dev/dl/go1.20.2.linux-amd64.tar.gz
   sudo tar -xvf go1.20.2.linux-amd64.tar.gz
   sudo mv go /usr/local
   rm go1.20.2.linux-amd64.tar.gz
