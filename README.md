@@ -40,4 +40,5 @@ journalctl -u sing-box --output cat -f
     
 
  ## TODO
-  * 支持 Xray 1.8.0
+  * 支持 grpc
+  * 服务端支持 Xray 1.8.0
