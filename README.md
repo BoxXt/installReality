@@ -15,8 +15,6 @@ systemctl stop sing-box
 systemctl kill sing-box
 #重启
 systemctl restart sing-box
-#查看日志
-journalctl -u sing-box --output cat -e
 #实时日志
 journalctl -u sing-box --output cat -f
 ```
