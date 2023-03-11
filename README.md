@@ -3,7 +3,7 @@
 ## 如何使用脚本
 * 系统仅支持: Ubuntu
 * 登录vps
-* 输入以下指令即可
+* 输入以下指令,并按照指令提示操作即可
   * ```sudo curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && sh ./installReality.sh```
 ## 调试
 ```yaml
