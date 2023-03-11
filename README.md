@@ -1,4 +1,4 @@
-# Reality 小白一键安装脚本
+# Reality 小白一键安装脚本（目前仅提供meta客户端使用的配置文件）
 
 ## 如何使用脚本
 * 系统支持 Debian 以及 Linus
