@@ -24,3 +24,6 @@
     [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/Prerelease-alpha)
     * 需要更新至最新版本。
     
+
+ ## TODO
+  * 支持 Xray 1.8.0
