@@ -4,7 +4,7 @@
 * 系统仅支持: Ubuntu
 * 登录vps
 * 输入以下指令即可
-  * ```curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && ./installReality.sh```
+  * ```sudo curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && sh ./installReality.sh```
 ## 调试
 ```yaml
 #启动
