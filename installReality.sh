@@ -67,7 +67,7 @@ echo "\033[32m short_id: $shortid \033[0m"
 sed "s/pukey/$pukey/g" /usr/local/etc/sing-box/meta.yaml
 sed "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
 sed "s/puuid/$uuid/g" /usr/local/etc/sing-box/meta.yaml
-echo "以下是你的meta客户端所需要的可用示例配置文件："
+echo "\033[32m 以下是你的meta客户端所需要的可用示例配置文件： \033[0m"
 cat /usr/local/etc/sing-box/meta.yaml
 echo "完成搭建"
 
