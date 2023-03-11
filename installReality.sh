@@ -58,11 +58,11 @@ echo "完成配置，启动singbox"
 systemctl start sing-box
 
 echo "以下是支持reality的meta客户端所需要的配置信息："
-echo "\033[32m servername: www.microsoft.com \033[0m"
-echo "\033[32m flow: xtls-rprx-vision \033[0m"
-echo "\033[32m uuid: $uuid \033[0m"
-echo "\033[32m $result \033[0m"
-echo "\033[32m short_id: $shortid \033[0m"
+echo "\033[31m servername: www.microsoft.com \033[0m"
+echo "\033[31m flow: xtls-rprx-vision \033[0m"
+echo "\033[31m uuid: $uuid \033[0m"
+echo "\033[31m $result \033[0m"
+echo "\033[31m short_id: $shortid \033[0m"
 
 sed "s/pukey/$pukey/g" /usr/local/etc/sing-box/meta.yaml
 sed "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
