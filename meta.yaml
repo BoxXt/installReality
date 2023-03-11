@@ -1,0 +1,43 @@
+
+mixed-port: 7890
+external-controller: 127.0.0.1:9090
+allow-lan: false
+mode: rule
+log-level: debug
+ipv6: false
+
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 114.114.114.114
+
+
+proxies:
+- name: reality
+  type: vless
+  server: vpsip
+  port: 443
+  uuid: puuid
+  network: tcp
+  tls: true
+  udp: true
+  xudp: true
+  flow: xtls-rprx-vision
+  servername: www.microsoft.com
+  reality-opts:
+    public-key: "pukey"
+    short-id: "pshortid"
+  client-fingerprint: chrome
+
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - reality
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy
