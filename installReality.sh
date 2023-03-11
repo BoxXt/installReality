@@ -63,7 +63,7 @@ sed -in "s/puuid/$uuid/g" /usr/local/etc/sing-box/config.json
 
 echo "安装openssl"
 sudo apt-get update && sudo apt-get install openssl
-shortid=`openssl rand -hex 4`
+shortid=`openssl rand -hex 8`
 echo "随机生成short_id"
 echo $shortid
 sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/config.json
