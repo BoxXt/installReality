@@ -33,7 +33,7 @@ journalctl -u sing-box --output cat -f
     
   * iOS:
     * [Singbox]() 
-      * 需要自己手搓Singbox客户端配置  
+      * 需要自己手搓Singbox客户端配置。  
     * [Pharos Pro]()
       * 需要在软件内发邮件申请到TF版本，策略配置中导入meta配置使用。
   
