@@ -35,9 +35,9 @@ result=`sing-box generate reality-keypair`
 echo $result
 echo -n "是否已经保存好你的密钥对?[y/n]"
 read name
-echo -n "请输入你刚刚保存的密钥对的私钥（private_key）:"
+echo -n "请输入你刚刚保存的密钥对的私钥（PrivateKey）:"
 read pkey
-echo -n "请输入你刚刚保存的密钥对的公钥（pubilc_key）:"
+echo -n "请输入你刚刚保存的密钥对的公钥（Pubilckey）:"
 read pukey
 sed 's/\bpkey\b/$pkey/g' /usr/local/etc/sing-box/config.json
 
