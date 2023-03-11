@@ -21,7 +21,24 @@ fi
 echo 'go环境已经安装完成'
 
 echo "安装singbox"
-./release/local/install.sh
+if [ -d /usr/local/go ]; then
+  export PATH="$PATH:/usr/local/go/bin"
+fi
+
+DIR=$(dirname "$0")
+PROJECT=$DIR/../..
+
+pushd $PROJECT
+go install -v -trimpath -ldflags "-s -w -buildid=" -tags with_quic,with_wireguard,with_acme,with_reality_server ./cmd/sing-box
+popd
+
+sudo cp $(go env GOPATH)/bin/sing-box /usr/local/bin/
+sudo mkdir -p /var/lib/sing-box
+sudo mkdir -p /usr/local/etc/sing-box
+sudo cp $PROJECT/release/config/config.json /usr/local/etc/sing-box/config.json
+sudo cp $DIR/sing-box.service /etc/systemd/system
+sudo systemctl daemon-reload
+
 
 echo "拉取初始singbox配置文件"
 curl -o config.json https://raw.githubusercontent.com/BoxXt/installReality/main/config.json && mv config.json /usr/local/etc/sing-box/config.json
