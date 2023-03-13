@@ -84,10 +84,13 @@ echo "\033[31m PrivateKey: $pkey \033[0m"
 echo "\033[31m PublicKey: $pukey \033[0m"
 echo "\033[31m short_id: $shortid \033[0m"
 echo ""
+ip=`curl https://api.my-ip.io/ip -s`
+sed -in "s/vpsip/$ip/g" /usr/local/etc/sing-box/meta.yaml
 sed -in "s/pukey/$pukey/g" /usr/local/etc/sing-box/meta.yaml
 sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
 sed -in "s/puuid/$uuid/g" /usr/local/etc/sing-box/meta.yaml
 echo "\033[32m 以下是你的meta客户端所需要的可用示例配置文件： \033[0m"
+echo "========================================================="
 cat /usr/local/etc/sing-box/meta.yaml
 echo "完成搭建"
 
