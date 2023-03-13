@@ -7,7 +7,7 @@
   ```
   sudo curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && sh ./installReality.sh
   ```
-* 将所获得meta配置文件中的sever修改为 vps ip 地址。
+* 将所获得meta配置文件中的server修改为 vps ip 地址。
 
 ## 调试
 ```yaml
