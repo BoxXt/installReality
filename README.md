@@ -7,7 +7,7 @@
   ```
   sudo curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && sh ./installReality.sh
   ```
-* 将所获得meta配置文件中的server修改为 vps ip 地址。
+* 最终得到 Meta 的客户端配置文件，选用支持 Clash.meta 的客户端导入使用即可
 
 ## 调试
 ```yaml
