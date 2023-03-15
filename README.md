@@ -53,7 +53,5 @@ journalctl -u sing-box --output cat -f
 
  ## TODO
   * 自定义域名
-  * BBR加速
   * 支持输出 singbox 客户端配置
   * 支持 grpc
-  * 服务端支持 Xray 1.8.0
