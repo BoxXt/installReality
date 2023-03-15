@@ -9,6 +9,14 @@
   ```
 * 最终得到 Meta 的客户端配置文件，选用支持 Clash.meta 的客户端导入使用即可
 
+## 开启BBR加速
+在脚本执行结束之后，执行以下命令开启BBR加速。
+```
+echo net.core.default_qdisc=fq >> /etc/sysctl.conf
+echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf
+sysctl -p
+```
+
 ## 调试
 ```yaml
 #启动
