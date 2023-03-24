@@ -75,6 +75,11 @@ echo "设置开机自动启动"
 systemctl enable sing-box
 echo ""
 
+echo "=======开启BBR加速=========="
+echo net.core.default_qdisc=fq >> /etc/sysctl.conf
+echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf
+sysctl -p
+echo "==========================="
 echo "以下是支持reality的meta客户端所需要的配置信息："
 echo ""
 echo "\033[31m servername: www.microsoft.com \033[0m"
