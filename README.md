@@ -8,6 +8,7 @@
   sudo curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && sh ./installReality.sh
   ```
 * 最终得到 Meta 的客户端配置文件，选用支持 Clash.meta 的客户端导入使用即可
+* 脚本内已自动开启BBR加速
 
 ## 调试
 ```yaml
