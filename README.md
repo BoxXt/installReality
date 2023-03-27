@@ -49,7 +49,7 @@ journalctl -u sing-box --output cat -f
   * 支持输出 singbox 客户端配置
   * 支持 grpc
 ## ======================English=================================
-# Reality White one-click installation script (currently only the configuration file used by the meta client is available)
+# Reality one-click installation script (currently only the configuration file used by the meta client is available)
 
 ## How to use the script
 * System only support: Ubuntu
