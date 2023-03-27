@@ -100,4 +100,3 @@ journalctl -u sing-box --output cat -f
   * Support for exporting singbox client configuration
   * Support for grpc
 
-Translated with www.DeepL.com/Translator (free version)
