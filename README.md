@@ -34,10 +34,8 @@ journalctl -u sing-box --output cat -f
     * 需要更新内核版本为alpha最新版本。
     
   * iOS:
-    * [Singbox]() 
-      * 需要自己手搓Singbox客户端配置。  
-    * [Pharos Pro]()
-      * 商店版本在1.7.9以上可用。
+    * [Singbox for iOS](https://testflight.apple.com/join/c6ylui2j) 配合 [Singbox config](https://sing-box.sagernet.org/configuration/inbound/hysteria/)
+    * [Pharos Pro](https://apps.apple.com/app/pharos-pro/id1456610173) 配合 [Clash.Meta config](https://docs.metacubex.one/function/proxy/hysteria)
   
   * Android:
     [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/Prerelease-alpha)
@@ -85,10 +83,8 @@ journalctl -u sing-box --output cat -f
     * Need to update the kernel version to the latest version of alpha.
     
   * iOS.
-    * [Singbox]() 
-      * Need to hand-roll the Singbox client configuration yourself.  
-    * [Pharos Pro]()
-      * Store version available at 1.7.9 or higher.
+    * [Singbox for iOS](https://testflight.apple.com/join/c6ylui2j) with [Singbox config](https://sing-box.sagernet.org/configuration/inbound/hysteria/)
+    * [Pharos Pro](https://apps.apple.com/app/pharos-pro/id1456610173) with [Clash.Meta config](https://docs.metacubex.one/function/proxy/hysteria)
   
   * Android.
     [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/Prerelease-alpha)
