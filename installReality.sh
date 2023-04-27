@@ -66,6 +66,7 @@ sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/config.json
 
 echo "完成配置，启动singbox"
 echo ""
+systemctl kill sing-box
 systemctl start sing-box
 echo "设置开机自动启动"
 systemctl enable sing-box
