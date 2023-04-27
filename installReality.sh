@@ -7,6 +7,8 @@ if ! [ -x "$(command -v git)" ]; then
 fi
 echo 'git已经安装完成'
 
+systemctl kill sing-box
+
 echo '拉取singbox'
 git clone https://github.com/SagerNet/sing-box
 cd sing-box
@@ -66,7 +68,6 @@ sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/config.json
 
 echo "完成配置，启动singbox"
 echo ""
-systemctl kill sing-box
 systemctl start sing-box
 echo "设置开机自动启动"
 systemctl enable sing-box
