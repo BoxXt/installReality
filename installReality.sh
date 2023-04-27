@@ -92,7 +92,10 @@ sed -in "s/pshortid/$shortid/g" /usr/local/etc/sing-box/meta.yaml
 sed -in "s/puuid/$uuid/g" /usr/local/etc/sing-box/meta.yaml
 echo "\033[32m 以下是你的meta客户端所需要的可用示例配置文件： \033[0m"
 echo "========================================================="
+echo ""
 cat /usr/local/etc/sing-box/meta.yaml
+ehco ""
+echo "========================================================="
 echo "完成搭建"
 
 
