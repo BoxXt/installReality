@@ -45,17 +45,13 @@ curl -o meta.yaml https://raw.githubusercontent.com/BoxXt/installReality/main/me
 
 
 echo "启动singbox用于安装reality"
-echo "\033[32m 生成密钥对,生成之后请保存好你的密钥对 \033[0m"
+echo "\033[32m 生成密钥对 \033[0m"
 result=`sing-box generate reality-keypair`
-echo "\033[31m $result \033[0m" 
-echo -n "是否已经保存好你的密钥对?[y/n]"
-read name
-echo -n "\033[32m 请输入你刚刚保存的密钥对中的私钥（PrivateKey）: \033[0m"
-read pkey
-echo -n "\033[32m 请输入你刚刚保存的密钥对中的公钥（Pubilckey）: \033[0m"
-read pukey
+pkey=$(echo $result | awk -F " " '{print $2}')
+pukey=$(echo $result | awk -F " " '{print $4}')
 sed -in "s/pkey/$pkey/g" /usr/local/etc/sing-box/config.json
 
+  
 echo "生成uuid"
 uuid=`sing-box generate uuid`
 echo $uuid
