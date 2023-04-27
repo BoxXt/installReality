@@ -41,3 +41,5 @@ proxy-groups:
 rules:
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
+  
+  
