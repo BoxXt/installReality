@@ -55,7 +55,7 @@ journalctl -u sing-box --output cat -f
 * Enter the following command, and follow the instructions
   ```
   sudo curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && sh . /installReality.sh
-  `` ` `
+  ```
 * Finally get the Meta client configuration file and import it with a client that supports Clash.meta.
 * BBR acceleration is automatically enabled in the script
 
