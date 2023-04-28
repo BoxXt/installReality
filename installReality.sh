@@ -42,8 +42,8 @@ sudo systemctl daemon-reload
 
 
 echo "拉取初始singbox配置文件"
-curl -o config.json https://raw.githubusercontent.com/BoxXt/installReality/main/config.json && mv config.json /usr/local/etc/sing-box/config.json
-curl -o meta.yaml https://raw.githubusercontent.com/BoxXt/installReality/main/meta.yaml && mv meta.yaml /usr/local/etc/sing-box/meta.yaml
+curl -o config.json https://raw.githubusercontent.com/BoxXt/installReality/main/config.json && mv -f config.json /usr/local/etc/sing-box/config.json
+curl -o meta.yaml https://raw.githubusercontent.com/BoxXt/installReality/main/meta.yaml && mv -f meta.yaml /usr/local/etc/sing-box/meta.yaml
 
 
 echo "启动singbox用于安装reality"
