@@ -43,7 +43,7 @@ In case you encounter any issues, the script provides several commands for debug
 The script currently supports exporting clash.meta client configuration for use by meta clients. The list of available clients (which are still being tested and supplemented) includes:
 
 - macOS: [ClashX.Meta](https://github.com/MetaCubeX/ClashX.Meta/releases) (The kernel version needs to be updated to the latest version of alpha)
-- Windows: Clash Verage (The kernel version needs to be updated to the latest version of alpha)
+- Windows: [Clash Verage](https://github.com/zzzgydi/clash-verge/releases) (The kernel version needs to be updated to the latest version of alpha)
 - iOS: Singbox for iOS with Singbox config, Pharos Pro with Clash.Meta config
 - Android: ClashMetaForAndroid (Needs to be updated to the latest version)
 
