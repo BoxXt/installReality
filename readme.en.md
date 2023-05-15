@@ -45,7 +45,7 @@ The script currently supports exporting clash.meta client configuration for use 
 - macOS: [ClashX.Meta](https://github.com/MetaCubeX/ClashX.Meta/releases) (The kernel version needs to be updated to the latest version of alpha)
 - Windows: [Clash Verage](https://github.com/zzzgydi/clash-verge/releases) (The kernel version needs to be updated to the latest version of alpha)
 - iOS: [Singbox](https://testflight.apple.com/join/c6ylui2j) for iOS with Singbox config, [Pharos Pro](https://apps.apple.com/app/pharos-pro/id1456610173) with Clash.Meta config
-- Android: [ClashMetaForAndroid]((https://github.com/MetaCubeX/ClashMetaForAndroid/releases) (Needs to be updated to the latest version)
+- Android: [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases) (Needs to be updated to the latest version)
 
 ## Additional Features
 
