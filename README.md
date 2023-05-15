@@ -1,6 +1,8 @@
-# Reality 小白一键安装脚本（目前仅提供meta客户端使用的配置文件）
 
+
+# Reality 小白一键安装脚本（目前仅提供meta客户端使用的配置文件）
 # [English‘s Readme](https://github.com/BoxXt/installReality/blob/main/readme.en.md)
+
 
 ## 如何使用脚本
 * 系统仅支持: Ubuntu
