@@ -50,53 +50,5 @@ journalctl -u sing-box --output cat -f
   * 自定义域名
   * 支持输出 singbox 客户端配置
   * 支持 grpc
-## ======================English=================================
-# Reality one-click installation script (currently only the configuration file used by the meta client is available)
 
-## How to use the script
-* System only support: Ubuntu
-* Login to vps
-* Enter the following command, and follow the instructions
-  ```
-  sudo curl -o installReality.sh https://raw.githubusercontent.com/BoxXt/installReality/main/installReality.sh && sh . /installReality.sh
-  ```
-* Finally get the Meta client configuration file and import it with a client that supports Clash.meta.
-* BBR acceleration is automatically enabled in the script
-
-## Debug
-```yaml
-# Start
-systemctl start sing-box
-# stop
-systemctl stop sing-box
-#Forced stop
-systemctl kill sing-box
-#restart
-systemctl restart sing-box
-#Real-time logging
-journalctl -u sing-box --output cat -f
-```
-## Client
-  Limited capacity currently supports output clash.meta client configuration to the meta client for the time being, the list of available clients (to be tested and added) are
-  * macOS.
-  [ClashX.Meta](https://github.com/MetaCubeX/ClashX.Meta/releases/tag/v1.2.1)
-    * Need to update the kernel version to the latest version of alpha.
-    
-  * Windows.
-  [Clash Verage](https://github.com/zzzgydi/clash-verge/releases/tag/v1.2.3)
-    * Need to update the kernel version to the latest version of alpha.
-    
-  * iOS.
-    * [Singbox for iOS](https://testflight.apple.com/join/c6ylui2j) with [Singbox config](https://sing-box.sagernet.org/configuration/inbound/hysteria/)
-    * [Pharos Pro](https://apps.apple.com/app/pharos-pro/id1456610173) with [Clash.Meta config](https://docs.metacubex.one/function/proxy/hysteria)
-  
-  * Android.
-    [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/Prerelease-alpha)
-    * Need to update to the latest version.
-    
-
- ## TODO
-  * Custom domain name
-  * Support for exporting singbox client configuration
-  * Support for grpc
 
