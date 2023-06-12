@@ -39,6 +39,7 @@ proxy-groups:
     proxies:
       - reality
 rules:
+  - GEOSITE,CN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
   
