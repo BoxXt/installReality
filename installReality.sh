@@ -23,7 +23,7 @@ rm go.tar.gz
 fi
 echo 'go环境已经安装完成'
 
-echo "安装singbox"
+echo "安装singbox，请耐心等待"
 if [ -d /usr/local/go ]; then
   export PATH="$PATH:/usr/local/go/bin"
 fi
