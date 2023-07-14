@@ -19,11 +19,11 @@
       ],
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.yahoo.com",
         "reality": {
           "enabled": true,
           "handshake": {
-            "server": "www.apple.com",
+            "server": "www.yahoo.com",
             "server_port": 443
           },
           "private_key": "pkey",
