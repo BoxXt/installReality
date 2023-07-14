@@ -80,7 +80,7 @@ sysctl -p
 echo "==========================="
 echo "以下是支持reality的meta客户端所需要的配置信息："
 echo ""
-echo "\033[31m servername: www.microsoft.com \033[0m"
+echo "\033[31m servername: www.apple.com \033[0m"
 echo "\033[31m flow: xtls-rprx-vision \033[0m"
 echo "\033[31m uuid: $uuid \033[0m"
 echo "\033[31m PrivateKey: $pkey \033[0m"
