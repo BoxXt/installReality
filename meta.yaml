@@ -27,7 +27,7 @@ proxies:
   udp: true
   xudp: true
   flow: xtls-rprx-vision
-  servername: www.apple.com
+  servername: www.yahoo.com
   reality-opts:
     public-key: "pukey"
     short-id: "pshortid"
