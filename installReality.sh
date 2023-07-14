@@ -10,7 +10,7 @@ echo 'git已经安装完成'
 systemctl kill sing-box
 
 echo '拉取singbox'
-rm -r ./sing-box
+rm -r sing-box
 git clone https://github.com/SagerNet/sing-box
 cd sing-box
 git switch dev-next
